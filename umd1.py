@@ -1,3 +1,6 @@
+#Asher's Code
+#If you decide to edit, make sure to push and pull
+
 import pandas as pd
 #find which day had the most crimes in 2024: Tuesday
 df = pd.read_csv("Crime_Incidents_in_2024.csv")
