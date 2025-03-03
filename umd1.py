@@ -15,3 +15,16 @@ hour_counts = df['HOUR'].value_counts()
 #find which crime was most common: THEFT/OTHER
 crime_counts = df['OFFENSE'].value_counts()
 print(crime_counts)
+
+## OUTPUT ##
+#OFFENSE
+#THEFT/OTHER                   13015
+#THEFT F/AUTO                   6680
+#MOTOR VEHICLE THEFT            5127
+#ROBBERY                        2109
+#ASSAULT W/DANGEROUS WEAPON     1026
+#BURGLARY                       1004
+#HOMICIDE                        187
+#SEX ABUSE                       142
+#ARSON                             4
+#Name: count, dtype: int64
