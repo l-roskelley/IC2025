@@ -61,6 +61,7 @@ metro_stations = {
     "Prince George's Plaza": (38.9655, -76.9555),
     "Rhode Island Ave-Brentwood": (38.9209, -76.9951),
     "Rockville": (39.0840, -77.1463),
+    "Ronald Reagan Washington National Airport": (38.8534, -77.0440),
     "Rosslyn": (38.8964, -77.0715),
     "Shady Grove": (39.1195, -77.1648),
     "Shaw-Howard U": (38.9127, -77.0223),
