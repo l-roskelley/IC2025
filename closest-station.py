@@ -157,3 +157,51 @@ print(df['closest_station'].value_counts().sort_values(ascending=False))
 # Smithsonian                                           20
 # Braddock Road                                          1
 # Suitland                                               1
+
+
+#when i removed the grand theft auto crimes and looked at closest stations these are the results
+# Columbia Heights                                    1748
+# NoMa-Gallaudet U                                    1593
+# U Street/African-Amer Civil War Memorial/Cardozo    1489
+# Rhode Island Ave-Brentwood                          1412
+# Stadium-Armory                                      1286
+# Georgia Ave-Petworth                                1204
+# Congress Heights                                    1181
+# Shaw-Howard U                                        928
+# Takoma                                               914
+# Dupont Circle                                        851
+# Eastern Market                                       741
+# Naylor Road                                          708
+# Benning Road                                         680
+# Navy Yard-Ballpark                                   642
+# Foggy Bottom-GWU                                     638
+# Fort Totten                                          619
+# Minnesota Ave                                        582
+# Brookland-CUA                                        555
+# Woodley Park-Zoo/Adams Morgan                        544
+# Mt Vernon Sq 7th St-Convention Center                541
+# Tenleytown-AU                                        531
+# Metro Center                                         465
+# Union Station                                        465
+# Deanwood                                             442
+# Farragut North                                       440
+# Cleveland Park                                       428
+# McPherson Square                                     380
+# Van Ness-UDC                                         282
+# Waterfront                                           262
+# Rosslyn                                              242
+# Gallery Place                                        216
+# Friendship Heights                                   214
+# Capitol Heights                                      187
+# Southern Ave                                         183
+# Silver Spring                                        106
+# Judiciary Square                                     103
+# West Hyattsville                                      72
+# L'Enfant Plaza                                        72
+# Farragut West                                         70
+# Federal Center SW                                     69
+# Federal Triangle                                      36
+# Court House                                           29
+# Smithsonian                                           15
+# Braddock Road                                          1
+# Ronald Reagan Washington National Airport              1
