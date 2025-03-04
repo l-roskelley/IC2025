@@ -19,13 +19,6 @@ crime_counts = df['OFFENSE'].value_counts()
 print(crime_counts)
 
 
-
-import csv 
-with open("crime_counts.csv", mode="a", newline="") as file:
-    writer = csv.writer(file)
-    writer.writerow(["OFFENSE", "VALUE"])
-    writer.writerow([df["OFFENSE"], crime_counts])
-
 ## OUTPUT ##
 #OFFENSE
 #THEFT/OTHER                   13015
