@@ -15,6 +15,9 @@ pd.set_option('display.max_rows', None)
 filtered_locations = locations[locations > 50]
 print(filtered_locations)
 
+with open('blocks.csv', 'w') as f:
+    for line in filtered_locations.iterrows():
+        print(df['BLOCK'],filtered_locations, file = f)
 # These are most popular blocks for crimes!!
 # 3100 - 3299 BLOCK OF 14TH STREET NW            451
 # 2000 - 2099 BLOCK OF 8TH STREET NW             200
