@@ -27,3 +27,12 @@ hour_counts = time_data['OFFENSE'].value_counts()
 #BURGLARY                       57
 #ASSAULT W/DANGEROUS WEAPON     37
 #SEX ABUSE                       6
+
+df = pd.read_csv("Tap&NontapDOTW.csv")
+
+columns_to_clean = ["Avg Daily Tapped Entries", "Avg Daily NonTapped Entries", "Avg Daily Entries"]
+
+for col in columns_to_clean:
+    df[col] = df[col].replace({',': ''}, regex=True).astype(int)
+
+df.to_csv("cleaned_tap_DOTW.csv", index=False)
