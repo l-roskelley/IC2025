@@ -7,26 +7,4 @@ ASSAULT W/DANGEROUS WEAPON,1026
 BURGLARY,1004
 HOMICIDE,187
 SEX ABUSE,142
-ARSON,4OFFENSE,VALUE
-"0                       THEFT/OTHER
-1                      THEFT F/AUTO
-2                       THEFT/OTHER
-3                       THEFT/OTHER
-4               MOTOR VEHICLE THEFT
-                    ...            
-29289                   THEFT/OTHER
-29290                   THEFT/OTHER
-29291           MOTOR VEHICLE THEFT
-29292                   THEFT/OTHER
-29293    ASSAULT W/DANGEROUS WEAPON
-Name: OFFENSE, Length: 29294, dtype: object","OFFENSE
-THEFT/OTHER                   13015
-THEFT F/AUTO                   6680
-MOTOR VEHICLE THEFT            5127
-ROBBERY                        2109
-ASSAULT W/DANGEROUS WEAPON     1026
-BURGLARY                       1004
-HOMICIDE                        187
-SEX ABUSE                       142
-ARSON                             4
-Name: count, dtype: int64"
+ARSON,4
