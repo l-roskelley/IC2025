@@ -105,7 +105,7 @@ def get_closest_station(lat, lon):
 df['closest_station'] = df.apply(lambda row: get_closest_station(row['LATITUDE'], row['LONGITUDE']), axis=1)
 
 # Print the dataframe with the closest station for each coordinate
-# print(df[['LATITUDE', 'LONGITUDE', 'closest_station']])
+# print(df[['LATITUDE', 'resent graph of crimes vs non-tapLONGITUDE', 'closest_station']])
 
 station_counts = df['closest_station'].value_counts().sort_values(ascending=False)
 station_counts.to_csv('newclosest_station.csv')
