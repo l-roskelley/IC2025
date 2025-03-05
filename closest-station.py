@@ -107,56 +107,9 @@ df['closest_station'] = df.apply(lambda row: get_closest_station(row['LATITUDE']
 # Print the dataframe with the closest station for each coordinate
 # print(df[['LATITUDE', 'LONGITUDE', 'closest_station']])
 
-print(df['closest_station'].value_counts().sort_values(ascending=False))
+station_counts = df['closest_station'].value_counts().sort_values(ascending=False)
+station_counts.to_csv('newclosest_station.csv')
 
-# results from code
-
-
-# NoMa-Gallaudet U                                    2200
-# Columbia Heights                                    1963
-# Rhode Island Ave-Brentwood                          1730
-# U Street/African-Amer Civil War Memorial/Cardozo    1678
-# Stadium-Armory                                      1622
-# Congress Heights                                    1575
-# Georgia Ave-Petworth                                1424
-# Takoma                                              1071
-# Shaw-Howard U                                       1068
-# Benning Road                                         955
-# Naylor Road                                          930
-# Dupont Circle                                        902
-# Eastern Market                                       872
-# Navy Yard-Ballpark                                   868
-# Fort Totten                                          793
-# Minnesota Ave                                        781
-# Brookland-CUA                                        697
-# Foggy Bottom-GWU                                     670
-# Mt Vernon Sq 7th St-Convention Center                661
-# Deanwood                                             659
-# Woodley Park-Zoo/Adams Morgan                        605
-# Union Station                                        590
-# Tenleytown-AU                                        554
-# Metro Center                                         477
-# Cleveland Park                                       462
-# Farragut North                                       454
-# McPherson Square                                     406
-# Waterfront                                           317
-# Van Ness-UDC                                         305
-# Capitol Heights                                      297
-# Rosslyn                                              256
-# Southern Ave                                         248
-# Gallery Place                                        246
-# Friendship Heights                                   235
-# West Hyattsville                                     140
-# Judiciary Square                                     122
-# Silver Spring                                        117
-# L'Enfant Plaza                                        90
-# Federal Center SW                                     88
-# Farragut West                                         76
-# Federal Triangle                                      38
-# Court House                                           30
-# Smithsonian                                           20
-# Braddock Road                                          1
-# Suitland                                               1
 
 
 #when i removed the grand theft auto crimes and looked at closest stations these are the results
