@@ -1,8 +1,9 @@
 import pandas as pd
 from geopy.distance import geodesic
 
-# Read CSV file with coordinates
-# Assumes your CSV has columns 'latitude' and 'longitude'
+# We worked with ChatGPT to help streamline the geopy syntax and usage.
+
+
 df = pd.read_csv('newcsv.csv')
 
 # Dictionary of DC Metro stations and their (latitude, longitude)
@@ -104,8 +105,6 @@ def get_closest_station(lat, lon):
 # Apply the function to each row to determine the closest metro station
 df['closest_station'] = df.apply(lambda row: get_closest_station(row['LATITUDE'], row['LONGITUDE']), axis=1)
 
-# Print the dataframe with the closest station for each coordinate
-# print(df[['LATITUDE', 'resent graph of crimes vs non-tapLONGITUDE', 'closest_station']])
 
 station_counts = df['closest_station'].value_counts().sort_values(ascending=False)
 station_counts.to_csv('newclosest_station.csv')
