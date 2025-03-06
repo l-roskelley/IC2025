@@ -36,3 +36,22 @@ for col in columns_to_clean:
     df[col] = df[col].replace({',': ''}, regex=True).astype(int)
 
 df.to_csv("cleaned_tap_DOTW.csv", index=False)
+
+#code for Percentage of non-taps by station graph
+import pandas as pd
+df = pd.read_csv("cleaned_tap_DOTW.csv")
+df['percentage'] = df['Avg Daily NonTapped Entries'] / df['Avg Daily Entries'] * 100
+
+import plotly.express as px
+fig = px.scatter(df,
+    x='Avg Daily Entries', 
+    y=df['percentage'],
+    color='Station Name',  
+    hover_name='Station Name',  
+    )
+fig.update_layout(
+    xaxis_title='Daily Entries',
+    yaxis_title='Percentage',
+    title='Percentage of non-taps by station'
+)
+fig.show()
